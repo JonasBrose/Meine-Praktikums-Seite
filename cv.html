@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lebenslauf</title>
-    <!-- <link rel="stylesheet" href="./assets/css/highFive.css"> -->
-     <link rel="stylesheet" href="./assets/css/cv.css">
+    <link rel="stylesheet" href="./assets/css/cv.css">
+    <link rel="stylesheet" href="./assets/css/highFive.css">
 </head>
 <body>
-    <header class="cv-header">
-        <img src="assets/img/Patrick.jpg" alt="Profilbild Max Müller" class="profile-image">
-        <h1 class="name">Jonas </h1>
-        <p class="title">Schüler</p>
-        <address class="contact-info">
-            <div class="contact-item">
-                <h2 class="contact-label">Adresse</h2>
-                <p class="contact-value">Karl-loewe-weg 20 ,23556 Lübeck</p>
+    
+    <header>
+        <div class="first-wrapper">
+            <img class="logo" src="./assets/img/highFive.jpg" alt="High Five Logo">
+            <h1>High 5</h1>
+        </div>
+        <nav>
+            <div class="flex-gap align-center">
+                <a href="./index.html">Home</a>
+                <a href="./cv.html">CV</a>
+                <a href="./Flexbox.html">Flexbox</a> 
+                <a href="./giveHighFive.html">Give High 5</a>
             </div>
-            <div class="contact-item">
-                <h2 class="contact-label">Telefon</h2>
-                <a href="tel:+491638810122" class="contact-value">+49 163 8810122</a>
+            <div class="flex-gap align-center">
+               <button>Sign in</button>
+                <button>Log in</button>
             </div>
-            <div class="contact-item">
-                <h2 class="contact-label">E-Mail</h2>
-                <a href="mailto:jonas.brose@icloud.com" class="contact-value">jonas.brose@icloud.com</a>
-            </div>
-        </address>
+        </nav>
     </header>
 
-    <main>
+
+
+<main>
+        <section class="cv-header">
+            <img src="assets/img/Patrick.jpg" alt="Profilbild Max Müller" class="profile-image">
+            <h1 class="name">Jonas </h1>
+            <p class="title">Schüler</p>
+            <address class="contact-info">
+                <div class="contact-item">
+                    <h2 class="contact-label">Adresse</h2>
+                    <p class="contact-value">Karl-loewe-weg 20 ,23556 Lübeck</p>
+                </div>
+                <div class="contact-item">
+                    <h2 class="contact-label">Telefon</h2>
+                    <a href="tel:+491638810122" class="contact-value">+49 163 8810122</a>
+                </div>
+                <div class="contact-item">
+                    <h2 class="contact-label">E-Mail</h2>
+                    <a href="mailto:jonas.brose@icloud.com" class="contact-value">jonas.brose@icloud.com</a>
+                </div>
+            </address>
+        </section>
+
+    <section class="cv-main">
         <section class="cv-section" aria-labelledby="about-me-heading">
             <div class="section-sidebar">
                 <h2 id="about-me-heading" class="section-title">Über mich</h2>
@@ -101,6 +124,7 @@
                 </ul>
             </div>
         </section>
-    </main> 
+    </section>
+</main> 
 </body>
 </html>

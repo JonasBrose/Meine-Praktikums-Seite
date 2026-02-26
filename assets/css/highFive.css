@@ -25,11 +25,11 @@ header{
 .logo{
     width:100px;
 }
-
+/* 
 div{
     display: flex;
 }
-
+ */
 .space-between{
     justify-content: space-between;
 }
@@ -82,14 +82,6 @@ h1{
     font-family: "schrift";
 }
 
-/* h1:hover{
-    font-size: 250%;
-} */
-
-/* a:hover{
-    font-size: 130%;
-
-} */
 
 a:nth-of-type(3){
     word-spacing: -6px;

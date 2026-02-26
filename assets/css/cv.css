@@ -11,20 +11,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 210mm;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 40px 48px;
-    font-family: 'helvetica', sans-serif;
-    line-height: 1.5;
-    color: #000;
-    background: #fff;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
+
 
 h2{
     font-size: 22px;
@@ -53,76 +40,94 @@ span{
     color: #666;
 }
 
+
+/* Main styling */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 794px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 40px 48px;
+    font-family: 'helvetica';
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cv-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 /* Kopfzeile styling */
 
 .cv-header{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 }
 
 .profile-image{
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .name{
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .title{
     font-weight: 100;
-    margin-top: -5px;
+    color: #5e5e5e;
 }
 
 .contact-info{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 50px;
-    margin-top: 18px;
+    width: 100%;
+    gap: 100px
 }
 
-.contact-items{
-    display:flex;
-    flex-direction: column;
-}
-
-.contact-value{
-    font-size: 14px;
-}
-
-/* Main styling */
-
-main{
+.contact-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 60px;
+}
+
+
+.contact-value{
+    font-size: 12px;
 }
 
 .cv-section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 100px;
-    margin-top: 40px;
+    align-items: flex-start;
+    margin-top: 32px;
+    gap: 40px;
 }
 
 /* Left Column - titles and Dates 30% */
-
 .section-sidebar{
     display: flex;
     flex-direction: column;
     width: 30%;
+    margin-top: 10px;
 }
 
 .sidebar-dates{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap:30px
 }
 
 .date-block{
@@ -130,46 +135,51 @@ main{
     flex-direction: column;
 }
 
-.date,.location{
+.date-block:nth-child(2){
+    margin-top: 85px;
+}
+
+.date,
+.location {
     font-size: 14px;
 }
 
-.date-block:nth-child(2){
-    margin-top:75px ;
-}
-
 /* right Column - content 70% */
-
+/* right column: content 70% */
 .section-content{
     width: 70%;
 }
 
-/* Praktika  */
+/* praktika entries */
 
 .employment-entry{
-/*     display: flex;
-    flex-direction: column; */
-    margin-top: 31px;
+    margin-top: 38px;
 }
 
-.section-content >.employment-entry >.job-title >p{
-    margin-top: 5px;
+.section-content > .employment-entry >p{
+    margin-top: 6px;
 }
 
-/* Bildung */
+/* ausbildung entries */
 
 .education-entry{
     margin-top: 38px;
 }
 
-.section-content>.education-entry>p{
-    margin-top: 5px;
+.section-content > .education-entry >p{
+    margin-top: 6px;
 }
 
-/* SKILLS */
+/* kenntnisse entries */
 
 .skills-list{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 8px 30px;
+}
+
+.skills-list li {
+    font-size: 15px;
+    color: #000;
 }
