@@ -1,0 +1,80 @@
+@font-face{
+    font-family: 'Alfa';
+    src:  url('../fonts/AlfaSlabOne-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src:  url('../Fonts/RobotoMono-Regular.ttf');
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210mm;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 48px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+address{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.flex{
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+}
+
+article{
+    display: flex;
+    gap: 20px;
+}
+
+article div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cv-intership, .cv-education{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cv-profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-direction: row;
+}

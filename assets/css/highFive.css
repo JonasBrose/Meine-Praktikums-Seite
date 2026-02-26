@@ -1,0 +1,96 @@
+@font-face{
+    font-family:"schrift";
+    src: url("../Fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: schrift2;
+    src: url(../Fonts/RobotoMono-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:0 5%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.logo{
+    width:100px;
+}
+
+div{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.first-wrapper{
+    width: 25%;
+    align-items: center;
+}
+
+.first-wrapper,.align-center,.flex-gap{
+    display:flex;
+}
+
+nav{
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.flex-gap{
+    gap:20px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+button{
+    padding:10px 20px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    background-color: white;
+    font-family: "schrift2";
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+    background-color: #ffff;
+    font-family: "schrift2";
+}
+
+h1{
+    font-family: "schrift";
+}
+
+/* h1:hover{
+    font-size: 250%;
+} */
+
+/* a:hover{
+    font-size: 130%;
+
+} */
+
+a:nth-of-type(3){
+    word-spacing: -6px;
+}

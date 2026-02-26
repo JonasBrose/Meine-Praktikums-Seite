@@ -1,0 +1,48 @@
+
+.title{
+    font-size: 100px;
+    color:green;
+}
+
+section{
+    border: 2px solid black;
+    height: 500px;
+    width: 800px;
+}
+
+/* test123 */
+
+.box1{
+    border: 2px solid green;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+
+.box2{
+    border: 2px solid blue;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+
+.box3{
+    border: 2px solid red;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.box4{
+    border: 2px solid deeppink;
+    background-color: deeppink;
+    height: 100px;
+    width: 100px
+}
+
+section{
+    display: flex;
+    flex-flow:column-reverse;
+    align-items:flex-end;
+    justify-content:space-evenly;
+}

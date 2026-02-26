@@ -1,0 +1,13 @@
+html *{ 
+    font-family: 'League Gothic','Bebas Neue','Arial Narrow', Arial, sans-serif; 
+}
+
+.cursor-pointer{
+cursor: pointer;
+}
+
+.centered{
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
