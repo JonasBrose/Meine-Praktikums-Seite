@@ -1,12 +1,9 @@
-@font-face{
-    font-family: 'Alfa';
-    src:  url('../fonts/AlfaSlabOne-Regular.ttf');
-}
 
 @font-face{
     font-family: 'Roboto';
     src:  url('../Fonts/RobotoMono-Regular.ttf');
 }
+
 
 * {
 margin: 0;
@@ -22,59 +19,157 @@ body {
     max-width: 100%;
     margin: 0 auto;
     padding: 40px 48px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'helvetica', sans-serif;
     line-height: 1.5;
     color: #000;
     background: #fff;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-header{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Roboto";
 }
 
-img{
-    width: 100px;
-    height: 100px;
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    font-family: "Roboto";
+}
+
+p,a{
+    font-size: 14px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: #666;
+}
+
+/* Kopfzeile styling */
+
+.cv-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image{
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-address{
+.name{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.title{
+    font-weight: 100;
+    margin-top: -5px;
+}
+
+.contact-info{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
-    margin-top: 20px;
+    gap: 50px;
+    margin-top: 18px;
 }
 
-.flex{
-    display: flex;
-    margin-top: 80px;
+.contact-items{
+    display:flex;
     flex-direction: column;
 }
 
-article{
-    display: flex;
-    gap: 20px;
+.contact-value{
+    font-size: 14px;
 }
 
-article div{
+/* Main styling */
+
+main{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    margin-top: 60px;
 }
 
-.cv-intership, .cv-education{
+.cv-section{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.cv-profile{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
     flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+/* Left Column - titles and Dates 30% */
+
+.section-sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.sidebar-dates{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.date-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.date,.location{
+    font-size: 14px;
+}
+
+.date-block:nth-child(2){
+    margin-top:75px ;
+}
+
+/* right Column - content 70% */
+
+.section-content{
+    width: 70%;
+}
+
+/* Praktika  */
+
+.employment-entry{
+/*     display: flex;
+    flex-direction: column; */
+    margin-top: 31px;
+}
+
+.section-content >.employment-entry >.job-title >p{
+    margin-top: 5px;
+}
+
+/* Bildung */
+
+.education-entry{
+    margin-top: 38px;
+}
+
+.section-content>.education-entry>p{
+    margin-top: 5px;
+}
+
+/* SKILLS */
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 30px;
 }

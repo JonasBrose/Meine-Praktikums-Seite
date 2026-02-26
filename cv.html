@@ -8,108 +8,99 @@
      <link rel="stylesheet" href="./assets/css/cv.css">
 </head>
 <body>
-<!--     <header>
-        <div class="first-wrapper">
-            <img class="logo" src="./assets/img/highFive.jpg" alt="High Five Logo">
-            <h1>High 5</h1>
-        </div>
-        <nav>
-            <div class="flex-gap align-center">
-                <a href="./index.html">Home</a>
-                <a href="./cv.html">CV</a>
-                <a href="./Flexbox.html">Flexbox</a> 
-                <a href="./giveHighFive.html">Give High 5</a>
+    <header class="cv-header">
+        <img src="assets/img/Patrick.jpg" alt="Profilbild Max Müller" class="profile-image">
+        <h1 class="name">Jonas </h1>
+        <p class="title">Schüler</p>
+        <address class="contact-info">
+            <div class="contact-item">
+                <h2 class="contact-label">Adresse</h2>
+                <p class="contact-value">Karl-loewe-weg 20 ,23556 Lübeck</p>
             </div>
-            <div class="flex-gap align-center">
-               <button>Sign in</button>
-                <button>Log in</button>
+            <div class="contact-item">
+                <h2 class="contact-label">Telefon</h2>
+                <a href="tel:+491638810122" class="contact-value">+49 163 8810122</a>
             </div>
-        </nav>
-</header> -->
-<header>
-    <img src="./assets/img/Patrick.jpg" alt="Bild von Patrick">
-    <h1>Jonas Brose</h1>
-    <p>Schüler</p>
-    <address>
-        <div class="contact-item">
-            <h3>Adresse</h3>
-            <p>Karl-loewe-weg 20, 23556 Lübeck</p>
-        </div>
-        <div class="contact-item">
-            <h3>Telefonnummer</h3>
-            <p>Nummer</p>
-        </div>
-        <div class="contact-item">
-            <h3>E-mail</h3>
-            <a href="mailto:jonas.brose@icoud.com">jonas.brose@icloud.com</a>
-        </div>
-    </address>
-</header>
+            <div class="contact-item">
+                <h2 class="contact-label">E-Mail</h2>
+                <a href="mailto:jonas.brose@icloud.com" class="contact-value">jonas.brose@icloud.com</a>
+            </div>
+        </address>
+    </header>
 
-<main>
-    <section class="cv-profile flex">
-        <div>
-            <h2>Über mich</h2>
-        </div>
-        <article>
-            <p> Lorem ipsum sit amet. </p>
-        </article>
-    </section>
-    <Section class="cv-intership flex">
-        <h2>Praktika</h2>
-        <article>
-            <div>
-                <h3>Febraur 2025</h3>
-                <p>Hamburg</p>
+    <main>
+        <section class="cv-section" aria-labelledby="about-me-heading">
+            <div class="section-sidebar">
+                <h2 id="about-me-heading" class="section-title">Über mich</h2>
             </div>
-            <div>
-                <h3>Bundespolizei</h3>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <div class="section-content">
+                <p class="profile-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facere
+                    reprehenderit saepe in aliquam expedita laudantium vero veritatis obcaecati porro iste maxime, neque
+                    modi eligendi quis delectus ratione tenetur iusto eos.</p>
             </div>
-        </article>
-        <article>
-            <div>
-                <h3>Febraur 2026</h3>
-                <p>Lübeck/Hamburg</p>
+        </section>
+
+        <section class="cv-section" aria-labelledby="praktika-heading">
+            <div class="section-sidebar">
+                <h2 id="praktika-heading" class="section-title">Praktika</h2>
+                <div class="sidebar-dates">
+                    <time class="date-block" datetime="2024-10/2024-11">
+                        <h3 class="date">Februar 2025</h3>
+                        <span class="location">Hamburg</span>
+                    </time>
+                    <time class="date-block" datetime="2024-07/2024-08">
+                        <h3 class="date">Februar 26</h3>
+                        <span class="location">Lübeck & Hamburg</span>
+                    </time>
+                </div>
             </div>
-            <div>
-                <h3>Cook & Cooper GmbH</h3>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <div class="section-content">
+                <article class="employment-entry">
+                    <h3 class="job-title">Schülerpraktikum bei der Bundespolizei</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facere reprehenderit saepe in
+                        aliquam expedita laudantium vero veritatis obcaecati porro iste maxime, neque modi eligendi quis
+                        delectus ratione tenetur iusto eos.</p>
+                </article>
+                <article class="employment-entry">
+                    <h3 class="job-title">Praktikum bei der Cook & Cooper GmbH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facere reprehenderit saepe in
+                        aliquam expedita laudantium vero veritatis obcaecati porro iste maxime, neque modi eligendi quis
+                        delectus ratione tenetur iusto eos.</p>
+                </article>
             </div>
-        </article>
-    </Section>
-    <section class="cv-education flex">
-        <h2>Bildung</h2>
-        <article>
-            <div>
-                <h3>2014-2019</h3>
-                <p>Lübeck</p>
+        </section>
+
+        <section class="cv-section" aria-labelledby="ausbildung-heading">
+            <div class="section-sidebar">
+                <h2 id="ausbildung-heading" class="section-title">Bildung</h2>
+                <div class="sidebar-dates">
+                    <time class="date-block" datetime="2019-09/2026-07">
+                        <h3 class="date">Sep 2014 - vorauss. Jul 2028</h3>
+                        <span class="location">Lübeck</span>
+                    </time>
+                </div>
             </div>
-            <div>
-                <h3>Gotthard-kühl-Schule</h3>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <div class="section-content">
+                <article class="education-entry">
+                    <h3 class="education-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="education-degree">Aktuell: Lorem ipsum dolor sit amet</p>
+                </article>
             </div>
-        </article>
-        <article>
-            <div>
-                <h3>2019 - jetzt (voraussichtlich 2028)</h3>
-                <p>Lübeck</p>
+        </section>
+
+        <section class="cv-section" aria-labelledby="kenntnisse-heading">
+            <div class="section-sidebar">
+                <h2 id="kenntnisse-heading" class="section-title">Kenntnisse</h2>
             </div>
-            <div>
-                <h3>Carl-Jacob-Burckhardt-Gymnasium</h3>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <div class="section-content">
+                <ul class="skills-list">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
             </div>
-        </article>
-    </section>
-    <section class="cv-skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-        </ul>
-    </section>
-</main>
+        </section>
+    </main> 
 </body>
 </html>
