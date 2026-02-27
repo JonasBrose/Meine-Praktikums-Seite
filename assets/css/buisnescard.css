@@ -9,24 +9,27 @@ html{
 }
 
 section{
+    background-color: lightgrey;
     height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 article{
+    border: 2px solid rgb(92, 92, 92);
     display: flex;
-    width: 550px;
-    height: 300px;
-    background-color: grey;
-    justify-content: center;
-    margin-top: 20px;
+width: 550px;
+height: 300px;
+background-color: white;;
 }
 
+img{
+    width: 40%;
+    object-fit:cover;
+}
 
-.flex-aligment{
+.flex-allignement{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,12 +38,11 @@ article{
     width: 60%;
 }
 
-.adresse{
-    margin-top: 20px;
+.adresse{margin-top: 20px;
 }
 
 
-section>article>div>a{
+section article div a{
     text-decoration: none;
     border: 1px solid black;
     padding: 5px 10px;
@@ -54,11 +56,4 @@ section>article>div>a{
 section article div a:hover{
     background-color: #ffffff;
     border: 5px solid black;
-}
-
-article:hover{
-    transform: scale(1.05);
-  transition: all 0.3s ease;
-  color: white;
-  background-color: black;
 }

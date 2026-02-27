@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Visitenkarte</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/highFive.css">
 </head>
@@ -11,14 +11,10 @@
     <header>
         <div class="first-wrapper">
             <img class="logo" src="./assets/img/highFive.jpg" alt="High Five Logo">
-            <h1>High 5</h1>
+            <a href="./index.html"><h1>High 5</h1></a> 
         </div>
         <nav>
             <div class="flex-gap align-center">
-                <a href="index.html">Home</a>
-                <a href="./cv.html">CV</a>
-                <a href="./Flexbox.html">Flexbox</a> 
-                <a href="./giveHighFive.html">Give High 5</a>
             </div>
             <div class="flex-gap align-center">
                <button>Sign in</button>
@@ -26,17 +22,45 @@
             </div>
         </nav>
 </header>
-    <section>
+
+<section>
+
+    <div>
+      <a href="./cv.html">
         <article>
-        <img src="./assets/img/ryan-de-hamer-WIPIAJW2-P8-unsplash.jpg" alt="Crossfit Box Kettlebell und wallball">
-        <div class="flex-allignement">
-            <h1>Jonas</h1>
-            <p class="adresse">Adreese: Karl-loewe-weg 20, 23556 Lübeck</p>
-            <p>Email: Jonas@cookandcooper.de</p>
-            <p>Telefon: 1234</p>
-            <a href="mailto:Jonas@cookandcooper.de">Schreib mir eine Nachricht!</a>
-        </div>
-    </article>
-    </section>
+          <div class="flex-aligment">
+            <h1 class="name">CV</h1>
+          </div>
+        </article>
+      </a>
+      <a href="./buisnessCard.html">
+        <article>
+          <div class="flex-aligment">
+            <h1 class="name">Visitenkarte</h1>
+          </div>
+        </article>
+      </a>
+    </div>
+
+
+    <div>
+      <a href="./flexbox.html">
+        <article>
+          <div class="flex-aligment">
+            <h1 class="name">Flexbox</h1>
+          </div>
+        </article>
+      </a>
+
+      <a href="./giveHighFive.html">
+        <article>
+          <div class="flex-aligment">
+            <h1 class="name">High 5</h1>
+          </div>
+        </article>
+      </a>
+    </div>
+
+  </section>
 </body>
 </html>
